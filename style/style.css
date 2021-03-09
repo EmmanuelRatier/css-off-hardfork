@@ -7,6 +7,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 
 body {
@@ -32,5 +34,254 @@ button {
 
 /* ... Your turn! ... */
 
-@media (min-width: 640px) {
+nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+      nav {
+      padding:1rem;
+      background-color: var(--green) ;
+  }
+      li {
+    list-style: none;
+  }
+  a {
+    text-decoration:none;
+    text-transform: uppercase;
+    color:white
+  }
+  header {
+      height:100vh;
+      display:flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      color: var(--orange);
+      margin:auto;
+      background-image: url(/img/blue-splash.png);
+      background-size:cover;
+      background-position: center;
+      max-width: 100%;
+      text-shadow: 0px 2px white;
+      background-attachment: fixed;
+    }
+
+    h1 {
+      font-size:4rem;
+      padding: 0;
+    }
+    .obstacles {
+      background-color: var(--orange);
+      padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+    }
+    
+    h2 {
+      padding-bottom: 2rem;
+      text-align: center;
+      text-shadow: 0px 2px 0 black ;
+      
+    }
+    .obstacles-group article {
+      background-color: var(--green);
+      display: flex;
+      justify-content: center!important;
+      border-radius: 20px;
+      flex-direction: column;
+      padding: 2.5rem;
+      text-align: center;
+    }
+    .grid {
+    display: flex;
+    gap: 1rem;
+    align-items: unset;
+    justify-content: center;
+    margin-right: 1rem;
+    flex: 1;
+    margin-left: 1rem;
+    }
+
+  .prizes {
+    background-color: var(--green);
+        padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+  }
+  .prizes-group article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border:dashed var(--yellow);
+  }
+  .wrap {
+    text-align: center;
+  }
+  .wrap h2 {
+    font-size: 2.5rem;;
+  }
+  .wrap img {
+        background-position: center;
+      background-size: cover;
+  max-width: 100%;
+  align-items: center;
+  }
+  form * {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin-left: 1rem;
+    border: none;
+    background-color: var(--yellow);
+      /* font-family: Bangers, sans-serif!important; */
+      border-radius: 5px;
+  }
+  input {
+    background-color: var(--orange);
+    border: none;
+    border-radius:5px
+  }
+  ::placeholder {
+    color: white;
+    font-family: Atma, sans-serif;
+    font-size: 1.5rem;
+  }
+  footer {
+    display: flex;
+    background-color:var(--yellow);
+    color: black;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding:1.5rem;
+  }
+  #prizes article img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+  }
+ nav  ul li a:hover {
+    transform: rotate(360deg)!important;
+          transition: 1s;
+      }
+@media(max-width:640px) {
+    nav {
+        padding:1rem;
+        background-color: var(--green) ;
+    }
+    nav ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      padding: 0;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration:none;
+      text-transform: uppercase;
+      color:white
+    }
+    header {
+      height:100vh;
+      display:flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      color: var(--orange);
+      margin:auto;
+      background-image: url(/img/blue-splash.png);
+      background-size:cover;
+      background-position: center;
+      max-width: 100%;
+      text-shadow: 0px 2px white;
+      background-attachment: fixed;
+    }
+    h1 {
+      font-size:4rem;
+      padding: 0;
+    }
+    .obstacles {
+      background-color: var(--orange);
+      padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    h2 {
+      padding-bottom: 2rem;
+      text-align: center;
+          text-shadow: 0px 2px 0 black ;
+
+    }
+    .obstacles-group article {
+      background-color: var(--green);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap:1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+
+  .prizes {
+    background-color: var(--green);
+        padding-top: 2.5rem;
+      padding-bottom: 3.5rem;
+  }
+  .prizes-group article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border:dashed var(--yellow);
+  }
+  .wrap h2 {
+    font-size: 2.5rem;;
+  }
+  .wrap img {
+        background-position: center;
+      background-size: cover;
+      max-width: 98%;
+  }
+  form * {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin-left: 1rem;
+    border: none;
+    background-color: var(--yellow);
+      /* font-family: Bangers, sans-serif!important; */
+      border-radius: 5px;
+  }
+  input {
+    background-color: var(--orange);
+    border: none;
+    border-radius:5px
+  }
+  ::placeholder {
+    color: white;
+    font-family: Atma, sans-serif;
+    font-size: 1.5rem;
+  }
+  footer {
+    display: flex;
+    background-color:var(--yellow);
+    color: black;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding:1.5rem;
+  }
 }
+
+ 
